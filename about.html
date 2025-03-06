@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverx</title>
+    <link rel="stylesheet" href="about.css">
+    </head>
+<body>
+
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menu");
+    var hamburger = document.querySelector(".hamburger");
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove("show");
+    }
+});
+</script>
+
+<main>
+    <section id="about-section">
+        <h1>About Serverx  !!!</h1>
+        <div class="about-content">
+            <p>Welcome to Serverx! We are a leading provider of automated tools designed to enhance your social media presence and productivity. Our solutions are trusted by thousands of users across the globe to streamline Facebook interactions, manage conversations, and extract valuable data effortlessly.</p>
+            
+            <p>At Serverx, our mission is to simplify and automate the tasks that take up your valuable time, giving you more control over your online engagements. We offer a suite of tools including Facebook Comment Tools, Messenger Management Tools, and Token Getters, all with the goal of making social media work for you.</p>
+            
+            <p>Founded in 2024, by abhi all codes and credits goes to abhi we continue to innovate and bring cutting-edge solutions to the table, ensuring that our users stay ahead of the competition. Our commitment to quality, security, and user-friendly interfaces is what sets us apart in the industry.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 abhi serverx. All rights reserved.</p>
+</footer>
+</body>
+</html>

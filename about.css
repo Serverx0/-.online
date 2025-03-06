@@ -1,0 +1,319 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Website Name (Left) */
+.site-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Hamburger Menu (Right) */
+.hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+    color: #ff9800;
+}
+
+/* Navigation Menu Styles */
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 15px;
+    display: block;
+    background: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ff9800;
+    color: #000;
+    transform: translateX(5px);
+}
+
+nav.show {
+    display: block;
+}
+
+/* Content Section */
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+main {
+    padding-top: 60px;
+}
+
+/* Services Section Styles */
+#services-section {
+    padding: 80px 20px 40px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#services-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ff5722;
+    animation: slideInDown 1.2s ease-out;
+}
+
+#services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-box {
+    background: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: zoomIn 1.4s ease-out;
+}
+
+.service-box:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.service-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.service-box h2 {
+    font-size: 1.5em;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.visit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff5722;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.visit-button:hover {
+    background-color: #e64a19;
+}
+
+/* About Section Styles */
+#about-section {
+    padding: 80px 20px 40px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#about-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ff5722;
+    animation: slideInDown 1.2s ease-out;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #f5f5f5;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fixed Image Box */
+.image-box {
+    margin: 20px auto;
+    width: 350px;
+    height: 220px;
+    background: #444;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.05);
+}
+
+/* Services Section */
+h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Services Box Layout */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Service Box */
+.service-box {
+    background: #1e1e1e;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-box img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 152, 0, 0.5);
+}
+
+.service-box:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    .image-box {
+        width: 320px; /* Ensures consistency */
+        height: 200px; /* Adjusted for mobile */
+    }
+}

@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* Replace with the exact background color */
+}
+
+.container {
+    width: 375px; /* iPhone screen width */
+    margin: 0 auto;
+    background-color: #ffffff; /* Replace with the exact background color */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+    color: #333; /* Replace with the exact header text color */
+}
+
+.network img, .battery img {
+    height: 18px;
+    vertical-align: middle;
+}
+
+.battery span {
+    margin-left: 5px;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #007bff; /* Replace with the exact nav link color */
+}
+
+.main-image {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjust as needed */
+    transition: opacity 1s ease-in-out; /* Smooth transition for image change */
+}
+
+.text-content {
+    text-align: center;
+}
+
+.web-x {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Replace with the exact color */
+}
+
+.offical {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Replace with the exact color */
+}
+
+.shawx {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Replace with the exact color */
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 14px;
+    color: #555; /* Replace with the exact paragraph color */
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff; /* Replace with the exact button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    font-size: 12px;
+    color: #777; /* Replace with the exact footer color */
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0; /* Replace with the exact bottom nav background color */
+}
+
+.bottom-nav img {
+    height: 30px; /* Adjust as needed */
+}
